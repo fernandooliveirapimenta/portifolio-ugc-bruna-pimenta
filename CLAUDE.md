@@ -39,4 +39,15 @@ Key principles when modifying this site:
 
 ## Deployment
 
-Deployed on Vercel. To redeploy, use the deploy-to-vercel skill or push to the git remote.
+Deployed on Vercel. To redeploy via CLI (when not connected via GitHub):
+
+```bash
+vercel deploy . --prod -y --no-wait
+```
+
+Then inspect with:
+```bash
+vercel inspect <deployment-url>
+```
+
+For git-connected projects, push to the remote to trigger automatic deployments.
