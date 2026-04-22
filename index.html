@@ -128,51 +128,211 @@
         <span class="material-symbols-outlined">mail</span>
     </a>
 
-    <!-- Hero Section -->
-    <header class="relative min-h-screen flex items-end pt-32 pb-20 px-6 sm:px-12 overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img class="w-full h-full object-cover" 
-                 alt="Bruna Pimenta - Criadora de Conteúdo UGC e Curadora Digital" 
+    <!-- Hero Section - Cinematic Editorial Redesign -->
+    <header class="relative min-h-screen flex items-center justify-center overflow-hidden bg-on-background">
+
+        <!-- Background Image with Parallax-like Scale -->
+        <div class="absolute inset-0 z-0 scale-110 animate-slow-zoom">
+            <img class="w-full h-full object-cover"
+                 alt="Bruna Pimenta - Criadora de Conteúdo UGC e Curadora Digital"
                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ1saXsEK_XDPDa7hDwQrmWMRmdtrDZ7gFU7dq_eBnAnstNrdsRSMZDcM6VOD_wxh30LSmPerbbin4JBtDs7tQuZybt1WunlYCRO1B66nH5PAxw5fuGRmFYeZI-v3rJ3hWJzWY5CDO4j3nkt98WxZb8_pSsyG93WI5-ZrYFeUwZpt0T2p5pFSknEBZUCxf6QpAxl-OBK1ZOiNXkLjv9oHCc2uFW6_mJZhqIwXgPXfhcfwc3Bmbhicr2XxzYaTpkxnkvHrgkBnig2M"
                  fetchpriority="high">
-            <!-- Signature Gradient Transition -->
-            <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-70"></div>
         </div>
-        
-        <div class="relative z-10 max-w-screen-2xl mx-auto w-full">
-            <h1 class="display-lg serif leading-[0.82] font-bold tracking-editorial text-on-background">
-                Bruna <br> Pimenta
+
+        <!-- Gradient Overlay - Cinematic Vignette -->
+        <div class="absolute inset-0 z-10 bg-gradient-to-t from-on-background via-on-background/60 to-transparent"></div>
+        <div class="absolute inset-0 z-10 bg-gradient-to-r from-on-background/80 via-transparent to-on-background/30"></div>
+
+        <!-- Grain Texture Overlay - Editorial Feel -->
+        <div class="absolute inset-0 z-20 opacity-[0.03] pointer-events-none"
+             style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.85%22 numOctaves=%224%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22/%3E%3C/svg%3E'); background-repeat: repeat; background-size: 200px;"></div>
+
+        <!-- Decorative Geometric Elements -->
+        <div class="absolute top-1/4 left-8 w-32 h-32 border border-on-primary/10 rounded-full animate-pulse-slow z-20"></div>
+        <div class="absolute bottom-1/3 right-12 w-48 h-48 border border-on-primary/5 rounded-full animate-pulse-slow z-20 animation-delay-1000"></div>
+
+        <!-- Main Content - Staggered Animation -->
+        <div class="relative z-30 text-center px-6 sm:px-12 max-w-screen-xl mx-auto">
+
+            <!-- Eyebrow Label -->
+            <div class="flex items-center justify-center gap-4 mb-8 animate-hero-fade animation-delay-0">
+                <span class="w-16 h-px bg-on-primary/40"></span>
+                <span class="text-[0.55rem] uppercase tracking-[0.4em] font-bold text-on-primary/60">Portfólio UGC</span>
+                <span class="w-16 h-px bg-on-primary/40"></span>
+            </div>
+
+            <!-- Main Typography - Oversized Display -->
+            <h1 class="serif font-bold leading-[0.8] tracking-editorial text-on-primary mb-8 animate-hero-fade animation-delay-200">
+                <span class="block text-[clamp(4rem,15vw,12rem)] animate-letter-reveal">Bruna</span>
+                <span class="block text-[clamp(3rem,12vw,9rem)] italic text-primary-container animate-letter-reveal animation-delay-300">Pimenta</span>
             </h1>
-            <p class="mt-10 text-xs md:text-sm font-bold tracking-[0.4em] uppercase text-outline/70">
-                Criadora de Conteúdo UGC • Editorial Curator
-            </p>
+
+            <!-- Subtitle - Split into lines -->
+            <div class="overflow-hidden mb-12 animate-hero-fade animation-delay-500">
+                <p class="text-sm sm:text-base md:text-lg font-medium tracking-[0.25em] uppercase text-on-primary/70">
+                    UGC Creator &bull; Curadora Digital
+                </p>
+            </div>
+
+            <!-- Scroll Indicator - Animated -->
+            <div class="flex flex-col items-center gap-3 animate-hero-fade animation-delay-700">
+                <span class="text-[0.5rem] uppercase tracking-[0.4em] text-on-primary/40 font-bold">Scroll</span>
+                <div class="w-px h-16 bg-gradient-to-b from-on-primary/40 to-transparent animate-scroll-line"></div>
+            </div>
         </div>
+
+        <!-- Floating Stats Badge - Bottom Right -->
+        <div class="absolute bottom-20 right-8 sm:right-16 z-30 animate-hero-fade animation-delay-900">
+            <div class="bg-on-primary/10 backdrop-blur-md border border-on-primary/20 rounded-[1.5rem] p-6 sm:p-8">
+                <span class="block text-4xl sm:text-5xl serif font-bold text-on-primary">325k</span>
+                <span class="text-[0.5rem] uppercase tracking-[0.3em] text-on-primary/60 font-bold mt-1 block">Seguidores</span>
+            </div>
+        </div>
+
+        <!-- Diagonal Accent Line -->
+        <div class="absolute top-0 right-1/4 w-px h-full bg-gradient-to-b from-transparent via-primary/30 to-transparent z-20"></div>
     </header>
 
+    <style>
+        @keyframes hero-fade {
+            from { opacity: 0; transform: translateY(60px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes letter-reveal {
+            from { opacity: 0; transform: translateY(100%); filter: blur(10px); }
+            to { opacity: 1; transform: translateY(0); filter: blur(0); }
+        }
+        @keyframes slow-zoom {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+        @keyframes scroll-line {
+            0%, 100% { opacity: 0.3; transform: scaleY(0.5); }
+            50% { opacity: 1; transform: scaleY(1); }
+        }
+        @keyframes pulse-slow {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        .animate-hero-fade {
+            opacity: 0;
+            animation: hero-fade 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .animate-letter-reveal {
+            opacity: 0;
+            animation: letter-reveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .animate-slow-zoom { animation: slow-zoom 20s ease-out forwards; }
+        .animate-scroll-line {
+            animation: scroll-line 2s ease-in-out infinite;
+            transform-origin: top;
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 4s ease-in-out infinite;
+        }
+        .animation-delay-0 { animation-delay: 0s; }
+        .animation-delay-200 { animation-delay: 0.2s; }
+        .animation-delay-300 { animation-delay: 0.3s; }
+        .animation-delay-500 { animation-delay: 0.5s; }
+        .animation-delay-700 { animation-delay: 0.7s; }
+        .animation-delay-900 { animation-delay: 0.9s; }
+        .animation-delay-1000 { animation-delay: 1s; }
+    </style>
+
     <main>
-        <!-- About Section (Layered Tier 1) -->
-        <section id="sobre" class="py-24 sm:py-32 px-6 sm:px-12 bg-surface-container-low">
-            <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-32 items-center">
-                <div class="relative aspect-[4/5] rounded-[2rem] overflow-hidden ambient-shadow">
-                    <img class="w-full h-full object-cover" 
-                         alt="Bruna Pimenta em seu espaço de criação moderna e minimalista" 
-                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfnA4JyrKv7g4n_ywWqKxLN1XxImJcJ58Hxq2akIZbPuliBFUbKMuE_V3X8nkokZiEW4S4HsFjtC9ECPg0AWwh5stSGUYyOH5sD3-DuUsTySLc6Vrf1Ftn7st31lgnEkt9USuK3T_20eZk7RAQ0E_77xQIpy4byLs7EN_Pyt1VaXhkXRoC08YmdbUorhieQ4hj4IXZQY1gK_aP4Jwb624oW5iLWtrpjTY69ROvcCxGmulhY9ODeiHXFecU-X1-o6GtCuNFDPkfoxM"
-                         loading="lazy">
-                </div>
-                <div class="flex flex-col gap-10">
-                    <h2 class="headline-md serif text-on-background leading-tight uppercase tracking-editorial">Oi, sou Bruna!</h2>
-                    <div class="space-y-8 text-lg lg:text-xl text-on-surface-variant leading-relaxed">
-                        <p>Como criadora de conteúdo UGC, meu foco é transformar a identidade das marcas em experiências autênticas e relacionáveis. Não se trata apenas de filmar produtos, mas de curar narrativas que convertem.</p>
-                        <p>Com formação em estética e paixão por design, trago um olhar refinado para nichos de beleza, moda e lifestyle, garantindo que cada frame respire sofisticação e verdade.</p>
+        <!-- About Section (Layered Tier 1) - Editorial Redesign -->
+        <section id="sobre" class="py-24 sm:py-32 px-6 sm:px-12 bg-surface-container-low overflow-hidden">
+            <div class="max-w-screen-xl mx-auto relative">
+
+                <!-- Decorative oversized text background -->
+                <span class="absolute -top-8 -left-8 text-[18rem] sm:text-[22rem] serif font-bold text-outline/5 tracking-editorial select-none pointer-events-none">B</span>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-center relative z-10">
+
+                    <!-- Image Stack - Left Column (spans 7 cols) -->
+                    <div class="lg:col-span-7 relative">
+                        <!-- Primary image -->
+                        <div class="relative aspect-[4/5] rounded-[2rem] overflow-hidden ambient-shadow animate-fade-up">
+                            <img class="w-full h-full object-cover"
+                                 alt="Bruna Pimenta em seu espaço de criação moderna e minimalista"
+                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfnA4JyrKv7g4n_ywWqKxLN1XxImJcJ58Hxq2akIZbPuliBFUbKMuE_V3X8nkokZiEW4S4HsFjtC9ECPg0AWwh5stSGUYyOH5sD3-DuUsTySLc6Vrf1Ftn7st31lgnEkt9USuK3T_20eZk7RAQ0E_77xQIpy4byLs7EN_Pyt1VaXhkXRoC08YmdbUorhieQ4hj4IXZQY1gK_aP4Jwb624oW5iLWtrpjTY69ROvcCxGmulhY9ODeiHXFecU-X1-o6GtCuNFDPkfoxM"
+                                 loading="lazy">
+                            <!-- Gradient overlay for depth -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-on-background/30 via-transparent to-transparent"></div>
+                        </div>
+
+                        <!-- Floating accent card - overlaps image -->
+                        <div class="absolute -bottom-12 -right-4 lg:-right-12 bg-background p-6 sm:p-8 rounded-[1.5rem] ambient-shadow animate-fade-up animation-delay-200">
+                            <span class="block text-5xl sm:text-6xl serif font-bold text-primary" id="age-display">--</span>
+                            <span class="text-[0.55rem] uppercase tracking-labeled font-bold text-outline block mt-1">anos de idade</span>
+                        </div>
+
+                        <!-- Secondary accent - geometric shape -->
+                        <div class="absolute -top-6 -left-6 w-24 h-24 border-4 border-primary/20 rounded-full animate-fade-up animation-delay-300"></div>
                     </div>
-                    <div class="pt-4">
-                        <a href="#trabalhos" class="inline-block bg-primary text-on-primary px-12 py-5 rounded-full font-bold uppercase text-[0.65rem] tracking-[0.3em] transition-all hover:bg-primary-dim hover:scale-105 active:scale-95 shadow-lg">
-                            Explorar Portfólio
-                        </a>
+
+                    <!-- Content Stack - Right Column (spans 5 cols) -->
+                    <div class="lg:col-span-5 flex flex-col gap-8 lg:gap-12 lg:pt-16">
+
+                        <!-- Eyebrow label -->
+                        <div class="flex items-center gap-4 animate-fade-up animation-delay-100">
+                            <div class="w-12 h-px bg-primary"></div>
+                            <span class="text-[0.6rem] uppercase tracking-labeled font-bold text-primary">Sobre Mim</span>
+                        </div>
+
+                        <!-- Main heading - stacked typography -->
+                        <div class="animate-fade-up animation-delay-200">
+                            <h2 class="headline-md serif text-on-background leading-[0.85] tracking-editorial uppercase">
+                                Oi, sou<br>
+                                <span class="text-primary italic">a Bruna</span>
+                            </h2>
+                        </div>
+
+                        <!-- Bio text - editorial style -->
+                        <div class="space-y-6 text-base lg:text-lg text-on-surface-variant leading-relaxed animate-fade-up animation-delay-300">
+                            <p>Casada, paulistana, e profundamente apaixonada por criar conteúdo que gera <strong class="text-on-background font-semibold">resultados reais</strong> para marcas.</p>
+                            <p>Cada entrega é tratada com dedicação total — do conceito ao conteúdo final.</p>
+                        </div>
+
+                        <!-- Location badge -->
+                        <div class="flex items-center gap-3 animate-fade-up animation-delay-400">
+                            <span class="material-symbols-outlined text-primary text-xl">location_on</span>
+                            <span class="text-[0.7rem] uppercase tracking-labeled font-medium text-on-surface-variant">São Paulo, Brasil</span>
+                        </div>
+
+                        <!-- CTA Button - editorial style -->
+                        <div class="pt-4 animate-fade-up animation-delay-500">
+                            <a href="#trabalhos" class="group inline-flex items-center gap-4 bg-primary text-on-primary px-10 py-5 rounded-full font-bold uppercase text-[0.65rem] tracking-[0.3em] transition-all hover:bg-primary-dim hover:scale-105 active:scale-95 shadow-lg">
+                                Explorar Portfólio
+                                <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <style>
+            @keyframes fade-up {
+                from {
+                    opacity: 0;
+                    transform: translateY(40px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            .animate-fade-up {
+                opacity: 0;
+                animation: fade-up 0.8s ease-out forwards;
+            }
+            .animation-delay-100 { animation-delay: 0.1s; }
+            .animation-delay-200 { animation-delay: 0.2s; }
+            .animation-delay-300 { animation-delay: 0.3s; }
+            .animation-delay-400 { animation-delay: 0.4s; }
+            .animation-delay-500 { animation-delay: 0.5s; }
+        </style>
 
         <!-- Content Styles (Asymmetric Grid) -->
         <section class="py-24 px-6 sm:px-12 bg-background">
@@ -454,6 +614,24 @@
         <h2>Content Summary for Assistive Agents</h2>
         <p>This portfolio belongs to Bruna Pimenta, a UGC Creator. Key sections: About (Background in aesthetics), Content Styles (Unboxing, Review, ASMR, Cine), Video Portfolio (Skin care, Interior Design, Tech, Fashion), Equipment (iPhone 15 Pro Max, DJI Mic 2), and Business Stats (325k followers, 4.8M impressions).</p>
     </div>
+
+    <!-- Age Calculation Script -->
+    <script>
+        (function() {
+            const birthDate = new Date('1996-09-15');
+            const today = new Date();
+
+            let age = today.getFullYear() - birthDate.getFullYear();
+            const monthDiff = today.getMonth() - birthDate.getMonth();
+
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+
+            const ageEl = document.getElementById('age-display');
+            if (ageEl) ageEl.textContent = age;
+        })();
+    </script>
 
 </body>
 </html>
