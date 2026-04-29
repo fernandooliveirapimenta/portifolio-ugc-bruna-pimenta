@@ -39,8 +39,16 @@ Key principles when modifying this site:
 
 ## Deployment
 
-Deployed on Vercel. To redeploy via CLI (when not connected via GitHub):
+Deployed on Vercel under the project **bruna-pimenta-ugc**. 
 
+**IMPORTANT: Always run deploy commands from the project root** (the directory containing `index.html`), NOT from the `images/` subdirectory. Deploying from the wrong directory will upload only images and cause a 404.
+
+**To link the project (one time):**
+```bash
+vercel link --project bruna-pimenta-ugc --yes
+```
+
+**To redeploy via CLI:**
 ```bash
 vercel deploy . --prod -y --no-wait
 ```
